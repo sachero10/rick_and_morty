@@ -13,14 +13,16 @@ const rootReducer = (state = initialState, { type, payload }) => {
       let copy1 = state.allCharacters;
       copy1.push(payload);
       // return { ...state, myFavorites: copy1 };
-      return { ...state, myFavorites: copy1, allCharacters: copy1 };
+      return { ...state, myFavorites: payload, allCharacters: payload };
+    // return { ...state, myFavorites: copy1, allCharacters: copy1 };
     //return {...state, myFavorites: [...state.myFavorites, action.payload]};
 
     case REMOVE_FAV:
       let copy2 = state.myFavorites.filter((char) => {
         return char.id !== Number(payload);
       });
-      return { ...state, myFavorites: copy2 };
+      return { ...state, myFavorites: payload };
+    // return { ...state, myFavorites: copy2 };
     //return {...state, myFavorites: state.myFavorites.filter((char)=>char.id !== action.payload),};
 
     case FILTER:
