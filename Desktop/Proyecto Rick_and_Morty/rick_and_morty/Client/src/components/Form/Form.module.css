@@ -1,0 +1,40 @@
+form {
+  text-align: center;
+  margin-top: 200px;
+  font-size: 25px;
+  color: yellow;
+}
+
+label {
+  padding: 12px;
+  margin: 10px;
+}
+
+button {
+  border-radius: 30px;
+  font-size: 25px;
+  padding: 32px 16px;
+  margin: 20px;
+  background-color: black;
+  color: yellow;
+  border: 5px solid #4caf50;
+  font-family: "FuenteR&M";
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #4caf50; /* Green */
+  color: black;
+}
+
+input[type="text"] {
+  border: 2px solid rgb(21, 166, 48);
+  border-radius: 4px;
+  background-color: gray;
+  color: black;
+}
+
+input.placeholder {
+  color: black;
+}

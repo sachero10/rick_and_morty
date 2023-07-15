@@ -42,13 +42,13 @@ const Form = (props) => {
 
       <label htmlFor="password">PASSWORD</label>
       <input
-        type="text"
+        type="password"
         name="password"
         value={userData.password}
         onChange={handleChange}
       />
       {errors.p1 ? <p>{errors.p1}</p> : <p>{errors.e2}</p>}
-      <button type="submit">SUBMIT</button>
+      <button type="submit">ENTRAR</button>
     </form>
   );
 };

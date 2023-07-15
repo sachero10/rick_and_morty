@@ -1,0 +1,20 @@
+.nav{
+    background-color: rgba(0, 255, 21, 0.24);
+    width: 100%;
+}
+
+.navButtons{
+    text-align: left;
+    width: 50%;
+    display: inline-block;
+}
+
+.navSearch{
+    text-align: right;
+    width: 50%;
+    display: inline-block;
+}
+
+.navButtons button{
+    margin: 0px 10px 0px 10px;
+}
